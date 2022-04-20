@@ -36,8 +36,10 @@ jobs:
         with:
           push: true
           tags: sennaparsa.azurecr.io/reddog-container-app:${{ github.sha }}
-          file: ./Dockerfile
-          context: ./
+#           file: ./Dockerfile
+#           context: ./
+          context: .
+          file: traefik/Dockerfile
 
 
   deploy:
